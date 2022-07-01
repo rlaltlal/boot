@@ -1,6 +1,7 @@
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>		
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>		
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +42,7 @@
 			</div>
 			<div class="form-group">
 				<label for="">제목</label>
-				<span><input type="text" name="title" value="${board.title}"></span>
+				<span><input type="text" name="title" value="${board.title}" class="form-control"></span>
 			</div>
 			<div class="form-group">
 				<label for="">작성자</label>
@@ -57,7 +58,7 @@
 			</div>
 			<div class="form-group">
 				<label for="">내용</label>
-				<span><input type="text" name="cont" value="${board.cont}"></span>
+				<span><input type="text" name="cont" value="${board.cont}" class="form-control"></span>
 			</div>
 			<div class="form-group">
 				<input type="submit" value="제출" class="btn btn-default">
